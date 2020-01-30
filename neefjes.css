@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Permanent+Marker&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Permanent Marker', cursive; 
+    background: #3264fc;
+    background: -moz-linear-gradient(top,  #3264fc 0%, #7db9e8 100%); 
+    background: -webkit-linear-gradient(top,  #3264fc 0%,#7db9e8 100%); 
+    background: linear-gradient(to bottom,  #3264fc 0%,#7db9e8 100%); 
+    min-height: 100vh;
+    margin: 2em 0; 
+    color: #fff;
+}
+h1 {
+    font-weight: 900;
+    text-align: center;
+    color: #f00;
+    font-size: 4em;
+    letter-spacing: .1em; 
+    text-shadow: 
+        -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff,
+        -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000, 5px 5px 0 #000;
+    ;
+}
+#bolletjes {
+    min-height: 2.39em;
+    box-sizing: content-box;
+    background-color: #fff;
+    border: 4px solid #000; 
+     border-bottom: 4px solid #000;  
+    text-align: center; 
+    margin-bottom: 1em;
+    grid-column: span 4;
+    width: 100%;
+    line-height: 1em;    
+        display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.bolletje {
+    height: 2em;
+    width: 2em; 
+    padding: 1em;
+    display: inline-block;
+    border-radius: 1em;
+    margin: .1em;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-gap: 2em;
+    margin: 0 auto;
+    padding: 0 4em;
+    background-image: url('afb/donaldBg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90%;
+}
+#illustratie {
+   grid-row: span 2;
+   grid-column: span 2;
+}
+
+section img {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+    border: 8px solid transparent;
+}
+section .like {
+    text-align: right;
+    background-image: url(afb/thumb-up.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10%;
+    cursor: pointer;
+}
+section .like:hover {
+    background-image: url(afb/thumb-up-hover.png);
+}
+
+.info {
+    background-color: rgba(255,255,255,.8);
+    width: 100%;
+    color: #000;
+    font-family: 'kalam';
+    padding: 1em;
+    overflow: auto;
+    padding: 1em;
+    grid-column: span 3; }
+
+    
+#titel {
+    color: #3264fc;
+    text-align: center;
+}
+#informatie {
+    font-size: 2em;
+    line-height: 1em;;
+}
+.bron {
+    font-family: 'kalam';
+    text-align: center;
+    padding: 1em;
+}
+.bron a {
+    color: #f00;
+    text-decoration: none;
+}
+.bron a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.een, .twee, .drie, .vier, .vijf, .zes, .zeven {
+    transition: 0.2s;
+}
+/*
+.een:active {
+    margin: 0px;
+    padding: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #0080bf;
+}
+
+.twee:active {
+    margin: 0px;
+    padding: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ae1a00;
+}
+.drie:active {
+    margin: 0px;
+    padding: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #4055ff;
+}
+.vier:active {
+    margin: 0px;
+    padding: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #009b00;
+}
+.vijf:active {
+    margin: 0px;
+    padding: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #7e643d;
+}
+.zes:active {
+    margin: 0px;
+    padding: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ffb0ff;
+}
+.zeven:active {
+    margin: 0px;
+    padding: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ea1f25;
+}
+
+
+*/
